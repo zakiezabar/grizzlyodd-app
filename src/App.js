@@ -4,20 +4,21 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import HomePage from "./pages/homepage/homepage.component";
+import ShopPage from "./pages/shop/shop.component.jsx";
 
-const DesignKit = () => (
-  <div>
-    <h1>Design Kit</h1>
-    <span>Free for all</span>
-  </div>
-);
+// const DesignKit = () => (
+//   <div>
+//     <h1>Design Kit</h1>
+//     <span>Free for all</span>
+//   </div>
+// );
 
 function App() {
   return (
     <div>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route path='/' component={DesignKit} />
+        <Route path='/shop' component={ShopPage} />
       </Switch>
     </div>
   );
